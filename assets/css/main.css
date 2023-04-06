@@ -1,0 +1,392 @@
+/* General */
+/* Font Size for text: 20px; */
+br {
+  display: block;
+  margin: 10px 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+html { scroll-behavior: smooth; } 
+
+
+/* Navigation Bar */
+.navbar-bg-custom {
+  background-color: white;
+}
+
+.navbar a {
+  color: #0d0f0f;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.company-logo {
+  height: 70px;
+}
+
+.navbar i {
+  font-size: 30px;
+}
+
+/* Hero Carousel */
+.carousel-item {
+  height: 40rem;
+  background: #000;
+  color: white;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #dac2aa;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+/* Find Out More Cards */
+.find-out-more .card-figure {
+  overflow: hidden;
+}
+
+.find-out-more .card-figure img {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+.find-out-more .card-figure:hover img {
+  transform: scale(1.2);
+}
+
+.find-out-more .card-img-top {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.find-out-more a {
+  color: black;
+}
+
+.find-out-more a:visited {
+  color: black;
+}
+
+/* Contact */
+.locate .info {
+  border-top: 3px solid #dac2aa;
+  border-bottom: 3px solid #dac2aa;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.locate .info i {
+  font-size: 25px;
+  color: #dac2aa;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #f8ede1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.locate .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #222222;
+}
+.locate .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  color: #555555;
+}
+
+.locate .info .email:hover i,
+.locate .info .hours:hover i,
+.locate .info .address:hover i,
+.locate .info .phone:hover i {
+  background: #dac2aa;
+  color: #fff;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: #dac2aa;
+  padding: 80px 0px;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.newsletter h3 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.newsletter p {
+  font-size: 15px;
+  font-style: italic;
+  padding: 0px;
+  margin: 25px 0px 40px;
+}
+
+.newsletter form {
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+.newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #ff9800;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter form input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+  background-color: white;
+  border-top: 3px solid #dac2aa;
+}
+
+/* .footer .container {
+} */
+.footer p {
+  font-size: 16px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+.footer a {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.footer ul a:link {
+  color: black;
+}
+
+.footer ul a:visited {
+  color: black;
+}
+
+.footer ul a:hover {
+  color: black;
+}
+
+.footer ul a:active {
+  color: black;
+}
+
+.footer i {
+  font-size: 30px;
+  color: #dac2aa;
+  margin-right: 15px;
+}
+
+.footer i:hover {
+  color: #dac2aa;
+}
+
+/* Register Form */
+.register-form .row {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px grey;
+}
+
+.register-form .cover-photo img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: auto;
+  object-fit: cover;
+}
+
+.register-form .btn1 {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.register-form .btn1:hover {
+  background: white;
+  border: 1px solid;
+  color: black;
+}
+
+/* Login Form */
+.login-form .row {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px grey;
+}
+
+.login-form .cover-photo img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: auto;
+}
+
+.login-form .btn1 {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.login-form .btn1:hover {
+  background: white;
+  border: 1px solid;
+  color: black;
+}
+
+/* Profile Page */
+.profile-page .row {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px grey;
+}
+
+.profile-page .cover-photo img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: auto;
+}
+
+.profile-page .btn1 {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.profile-page .btn1:hover {
+  background: white;
+  border: 1px solid;
+  color: black;
+}
+
+.profile-page .btn-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+/* Contact Us and FAQ*/
+.contact-us .card {
+  border-radius: 20px;
+}
+
+.contact-us .card .btn-primary {
+  background-color: #dac2aa;
+  border-color: #dac2aa;
+}
+
+.frequently-asked-questions .card .btn-link {
+    color: black; 
+}
+
+.frequently-asked-questions .card .btn-link:visited {
+    color: black; 
+}
+
